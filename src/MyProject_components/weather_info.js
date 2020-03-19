@@ -4,13 +4,12 @@ const Weather = props => (
 	<div className="infoWeath">
 		{ props.city &&   //---- скрывает изначально параметры
 			<div>
-				<p>Местоположение: {props.city}, {props.country}</p>
-				<p>Температура: {props.temp}</p>
-				<p>Давление: {props.pressure}</p>
-				<p>Заход солнца: {props.sunset}</p>
-				<p>Ветер: {props.wind}</p>
+				<p>Location : {props.city}, {props.country}</p>
+				<p>Temperature (C°) : {props.temp}</p>
+				<p>Pressure (mm Hg) : {props.pressure}</p>
+				<p>Wind (m/s) : {props.wind}</p>
 				<p>{props.error}</p>
-			</div>	
+			</div>
 		}
 		<p className="error">{ props.error }</p>
 	</div>
